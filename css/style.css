@@ -311,10 +311,14 @@ template {
   background-color: #ff5a3c;
   color: #ffffff;
   border: none;
-  border-radius: 24.5px; }
+  border-radius: 24.5px;
+  border: 2.0px solid #ff5a3c; }
+  .button:hover {
+    color: #ff5a3c;
+    background-color: #ffffff; }
 
 .container {
-  width: 85%;
+  width: 86%;
   max-width: 1170px;
   margin: auto; }
 
@@ -338,7 +342,7 @@ img {
   max-width: 100%; }
 
 .menu {
-  padding-top: 2.2857rem;
+  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -349,7 +353,7 @@ img {
     font-weight: 500;
     color: #38393b; }
   .menu__button {
-    padding: 0.3rem 2.2rem; }
+    padding: 0.1rem 2.05rem; }
 
 .logo {
   display: flex;
@@ -384,7 +388,8 @@ img {
       background-color: #ff5a3c; }
 
 .button-wrapper {
-  background-color: #ffffff;
+  display: none;
+  background-color: transparent;
   border: none;
   cursor: pointer; }
   .button-wrapper > img {
@@ -395,35 +400,83 @@ img {
 
 .wrapper {
   display: none;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem; }
+  background-color: #ffffff; }
   .wrapper--active {
     display: flex; }
   .wrapper__item {
     width: 100%;
     text-align: center;
     margin-left: 1.7rem;
-    margin-top: 0.5rem;
+    padding-top: 0.5rem;
     text-decoration: none;
     font-size: 2rem;
     line-height: 2.64rem;
     font-weight: 300;
     border-bottom: 1px solid #000;
-    color: #38393b; }
+    color: #38393b;
+    background-color: #ffffff; }
   .wrapper__item-call {
     width: 100%;
     text-align: center;
     border: none;
     border-bottom: 1px solid #ff5a3c;
     margin-left: 1.7rem;
-    margin-top: 0.5rem;
+    padding-top: 0.5rem;
     text-decoration: none;
     font-size: 2rem;
     line-height: 2.64rem;
     font-weight: 300;
     color: #ff5a3c;
     background-color: #ffffff; }
+
+.hero {
+  height: 100vh;
+  margin-top: -6rem;
+  background: url(../img/hero/bg_left_top_hero.png) no-repeat -1% 0%, url(../img/hero/curve_hero.png) no-repeat 93.5% 17.5%, url(../img/hero/bg_notebook_hero.png) no-repeat 84% 100%, url(../img/hero/bg_SEO_hero.png) no-repeat 8.7% bottom; }
+  .hero__lines {
+    position: absolute;
+    bottom: -22%;
+    right: 6.5%; }
+  .hero__social-networks {
+    position: absolute;
+    left: 2.7%; }
+    .hero__social-networks-line {
+      display: block;
+      width: 4px;
+      height: 60vh;
+      margin-left: 8px;
+      margin-top: 10rem;
+      background-color: #ff5a3c;
+      border-radius: 2px; }
+    .hero__social-networks-link {
+      display: block;
+      margin-top: 35px; }
+  .hero-content {
+    margin: 0;
+    padding-top: 29%; }
+  .hero__title {
+    margin-bottom: 2.9rem;
+    font-size: 4.4rem;
+    line-height: 5.43rem;
+    font-weight: 700;
+    letter-spacing: -0.2rem;
+    color: #323232; }
+    .hero__title--primary {
+      color: #ff5a3c; }
+  .hero__text {
+    max-width: 563px;
+    font-size: 1.424rem;
+    line-height: 2.07rem;
+    font-weight: 300;
+    color: #2e2e2d;
+    margin-bottom: 2.55rem; }
+  .hero__button {
+    padding: 5px 38px; }
 
 @media screen and (max-width: 1300px) {
   html {
@@ -432,7 +485,7 @@ img {
 @media screen and (max-width: 1200px) {
   .nav {
     display: none; }
-  .button-wrapper > img {
+  .button-wrapper {
     display: block; }
   .menu__button {
     display: none; }
@@ -443,15 +496,28 @@ img {
   .menu__phone {
     flex-basis: 50%; }
   .button-wrapper {
-    flex-basis: 6%; } }
+    flex-basis: 6%; }
+  .hero {
+    background: url(../img/hero/bg_left_top_hero.png) no-repeat -1% -20%; }
+    .hero-content {
+      padding-left: 10%; }
+    .hero__social-networks-line {
+      height: 30rem; } }
 
 @media screen and (max-width: 992px) {
   html {
     font-size: 12px; } }
 
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 12px; } }
+  .hero__title {
+    font-size: 3.4rem;
+    line-height: 4.43rem; }
+  .hero-content {
+    padding-left: 0; }
+  .wrapper__item {
+    background-color: #e3fbdd; }
+  .wrapper__item-call {
+    background-color: #e3fbdd; } }
 
 @media screen and (max-width: 576px) {
   .menu {
@@ -464,4 +530,9 @@ img {
   .logo {
     flex-basis: 70%; }
   .button-wrapper {
-    flex-basis: 30%; } }
+    flex-basis: 30%; }
+  .hero__title {
+    font-size: 2.4rem;
+    line-height: 3.43rem; }
+  .hero__social-networks {
+    display: none; } }
