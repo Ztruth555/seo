@@ -66,9 +66,9 @@
     <section class="section hero">
       <div class="hero__social-networks">
         <span class="hero__social-networks-line"></span>
-        <a href=""><img src="img/hero/icon_viber.png" alt="viber" class="hero__social-networks-link"></a>
-        <a href=""><img src="img/hero/icon_whatsapp.png" alt="whatsapp" class="hero__social-networks-link"></a>
-        <a href=""><img src="img/hero/icon_message.png" alt="message" class="hero__social-networks-link"></a>
+        <a href="https://www.viber.com/ru/"><img src="img/hero/icon_viber.png" alt="viber" class="hero__social-networks-link"></a>
+        <a href="https://web.whatsapp.com/"><img src="img/hero/icon_whatsapp.png" alt="whatsapp" class="hero__social-networks-link"></a>
+        <a href="https://mail.google.com/"><img src="img/hero/icon_message.png" alt="message" class="hero__social-networks-link"></a>
         
       </div>
       <!-- /.hero__social-networks -->
@@ -86,7 +86,7 @@
           </p>
           <!-- /.hero__text -->
 
-          <button class="button hero__button">Обратный звонок</button>
+          <button class="button hero__button" data-toggle="modal">Обратный звонок</button>
 
         </div>
         <!-- /.hero-content -->
@@ -103,6 +103,32 @@
   </main>
 
   <footer class="footer"></footer>
+
+  <div class="modal">
+    <div class="modal__dialog">
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-group">
+          <input type="text" autocomplete="off" name="modalName" class="input modal__input" placeholder="Ваше имя">
+        </div>
+        <!-- /.input-group -->
+        <div class="input-group">
+          <input type="text" autocomplete="off" name="modalPhone" class="input modal__input" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.input-group -->
+        <button class="button modal__button">Отправить</button>
+      </form>
+      <!-- /.modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <div class="modal-thanks">
+    <div class="modal__dialog-thanks">
+      <h3 class="modal__title">Спасибо за заявку!</h3>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
 
   <!-- Cody House --> 
   <script src="js/scripts_codyhouse.js"></script>
