@@ -1,0 +1,68 @@
+.figures
+    &__card
+        position: relative
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        padding-top: 3rem
+        width: 100%
+        min-height: 23rem
+        box-shadow: 0px 0px 22px 5px rgba(33,33,34,0.05)
+        background: $light url(../img/figures/bg_figures_card.png) no-repeat center
+    &__item
+        z-index: 3
+        padding-bottom: 3rem
+        min-width: 290px
+        flex-basis: 25%
+    &__number
+        display: block
+        text-align: center
+        font-size: 4.42857rem
+        line-height: 5.93rem
+        font-weight: 700
+        letter-spacing: -0.05em
+        color: $primary
+    &__description
+        display: block
+        text-align: center
+        font-size: 21.9px
+        line-height: 37px
+        font-weight: 700
+        letter-spacing: -0.02em
+        color: #383736
+    &__video
+        margin-top: -14.3rem
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        min-height: 45.2rem
+        background: url(../img/figures/figures_bg_video.jpg) no-repeat center / cover
+        &-play
+            position: relative
+            cursor: pointer
+            margin-top: 8rem
+            &>img
+                position: relative
+                z-index: 1
+            &::before
+                content: ''
+                position: absolute
+                left: -3.5rem
+                top: -3rem  
+                width: 8.7143rem
+                height: 8.7143rem
+                opacity: 0.4
+                background-color: #090909
+                border-radius: 50%
+            &::after
+                content: ''
+                position: absolute
+                left: -2.4rem
+                top: -2rem
+                width: 6.643rem
+                height: 6.643rem 
+                opacity: 0.67
+                background-color: #b9b8b8
+                border-radius: 50%

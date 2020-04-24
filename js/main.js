@@ -91,5 +91,25 @@ $(document).ready(function () {
     }
   });
 
+  //Видео в секции figures
+  var player;
+
+  $('.figures__video-play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('figuresPlayer', {
+      height: '465',
+      width: '100%',
+      videoId: '3wPeND2gvqc',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+
+  })
+
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
+
+
 
 })
