@@ -7,6 +7,15 @@ $(document).ready(function () {
         wrapper.toggleClass('wrapper--active');
     });
 
+    window.addEventListener('scroll', function() {
+      $('.menu').innerHTML = pageYOffset;
+      if (pageYOffset > 0){
+        $('.menu').addClass('menu--scroll')
+      }else{
+        $('.menu').removeClass('menu--scroll')
+      }
+    });
+
     // Получение элементов
     var modal = $('.modal'),                    //Модальное окно
         modalBtn = $('[data-toggle=modal]');    // все элементы вызывающие модальное окно
@@ -103,13 +112,15 @@ $(document).ready(function () {
         'onReady': videoPlay,
       }
     });
+    $('.figures__card').addClass('figures__card--video-active');
+  });
 
-  })
+  
 
   function videoPlay(event) {
     event.target.playVideo();
   }
 
 
-
+  
 })
