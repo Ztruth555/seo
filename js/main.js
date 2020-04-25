@@ -100,6 +100,60 @@ $(document).ready(function () {
     }
   });
 
+  // Узнать стоимость
+  $('.cost__form').validate({
+    rules: {
+      costName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      costEmail: {
+        required: true,
+        email: true,
+      },
+      costAddress: {
+        required: true,
+      },
+      costMessage: {
+        required: true,
+      }
+    },
+    errorClass: "invalid",
+    
+    messages: {
+      costName: {
+        required: "Имя обязательно",
+        minlength: "Длина имени 2-15 символов",
+        maxlength: "Длина имени 2-15 символов"
+      },
+      costEmail:{
+        required: "Телефон обязательно",
+        email: "Введите в формате: name@domain.com"
+      },
+      costAddress:{
+        required: "Напишите адрес сайта",
+        
+      },
+      costMessage:{
+        required: "Нашишите сообшение",
+      }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал, ответ с сервера', response);
+          $(form)[0].reset();
+          modalThanks.toggleClass('modal--visible');
+          //ym(61250854,'reachGoal','form');
+        }
+      });
+    }
+  });
+
   //Видео в секции figures
   var player;
 
