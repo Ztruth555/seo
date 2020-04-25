@@ -175,6 +175,14 @@ $(document).ready(function () {
     event.target.playVideo();
   }
 
-
+  // Слайдеры
+  // var casesSwiper = new Swiper ('.cases__swiper-container', {
+  //   loop: true,
+  //   // Стрелки навигации
+  //   navigation: {
+  //     prevEl: '.cases__swiper-button-prev',
+  //     nextEl: '.cases__swiper-button-next',
+  //   },
+  // });
   
 })
