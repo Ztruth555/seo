@@ -527,6 +527,70 @@
       <!-- /.container -->
     </section>
     <!-- /.section news -->
+
+    <section class="section contacts">
+      <div class="container contacts__container">
+        <div class="contacts__text">
+          Остались вопросы? <br>
+          Напишите нам! <br>
+          Отправте Ваше сообщение <br>
+          через форму или <a href="https://mail.google.com/">e-mail</a>.
+
+          <div class="contacts__address-box">
+            <div class="contacts__address">
+              <span class="contacts__address-bold">Адрес</span><br>
+                Город Санкт-Петербург <br>
+                Улица Мурзинская дом 11 <br>
+                +7(812)-992-10-30 <br>
+                info@saytspb.ru
+            </div>
+            <!-- /.contacts__address -->
+            <div class="contacts__schedule">
+              <span class="contacts__schedule-bold">Рабочие дни </span><br>
+              Понедельник-Пятница <br>
+              <span class="contacts__schedule-bold">Выходные</span>
+              Суббота-Воскресенье <br>
+              <span class="contacts__schedule-bold">09:00-18:00</span>
+            </div>
+            <!-- /.contacts__schedule -->
+
+          </div>
+          <!-- /.contacts__address-box -->
+        </div>
+        <!-- /.contacts__text -->
+        
+        <form action="send.php" method="POST" class="form contacts__form">
+          <div class="input-group contacts__input-group">
+            <label for="contacts-name" class="form__label contacts__label">ИМЯ</label>
+            <input type="text" autocomplete="off" class="form__input contacts__input" id="contacts-name" name="contactsName" placeholder="Иван Иванов">
+          </div>
+          <!-- /.input-group contacts__input-group -->
+
+          <div class="input-group contacts__input-group">
+            <label for="contacts-email" class="form__label contacts__label">E-MAIL</label>
+            <input type="email" autocomplete="off" class="form__input contacts__input" id="contacts-email" name="contactsEmail" placeholder="ivanov@gmail.com">
+          </div>
+          <!-- /.input-group contacts__input-group -->
+
+          <div class="input-group contacts__input-group">
+            <label for="contacts-phone" class="form__label contacts__label">ТЕЛЕФОН</label>
+            <input type="tel" autocomplete="off" class="form__input contacts__input" id="contacts-phone" name="contactsPhone" placeholder="+7 999 888-88-88">
+          </div>
+          <!-- /.input-group contacts__input-group -->
+
+          <div class="input-group contacts__input-group">
+            <label for="contacts-message" class="form__label contacts__label">СООБЩЕНИЕ</label>
+            <input type="text" autocomplete="off" class="form__input contacts__input" id="contacts-message" name="contactsMessage" placeholder="Введите Ваше сообщение">
+          </div>
+          <!-- /.input-group contacts__input-group -->
+          <button class="button button--light contacts__button">Отправить</button>
+        </form>
+        <!-- /.form contacts__form -->
+        
+      </div>
+      <!-- /.container contacts__container -->
+    </section>
+    <!-- /.section contacts -->
   </main>
 
   <footer class="footer"></footer>

@@ -9,8 +9,15 @@
     border: 2.0px solid #ff5a3c
     cursor: pointer
     &:hover 
-        color: #ff5a3c
-        background-color: $light
+      color: #ff5a3c
+      background-color: $light
+    &--light
+      background-color: $light
+      color: $primary
+      border: 2.0px solid $light
+      &:hover 
+        color: $light
+        background-color: $primary
 .input
     &-group
         position: relative

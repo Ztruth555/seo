@@ -154,6 +154,61 @@ $(document).ready(function () {
     }
   });
 
+  // Остались вопросы
+  $('.contacts__form').validate({
+    rules: {
+      contactsName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      contactsEmail: {
+        required: true,
+        email: true,
+      },
+      contactsPhone: {
+        required: true,
+        minlength: 18,
+      },
+      contactsMessage: {
+        required: true,
+      }
+    },
+    errorClass: "invalid",
+
+    messages: {
+      contactsName: {
+        required: "Имя обязательно",
+        minlength: "Длина имени 2-15 символов",
+        maxlength: "Длина имени 2-15 символов"
+      },
+      contactsEmail:{
+        required: "Телефон обязательно",
+        email: "Введите в формате: name@domain.com"
+      },
+      contactsPhone:{
+        required: "Телефон обязательно",
+        minlength: "Введите телефон полностью",
+      },
+      contactsMessage:{
+        required: "Нашишите сообшение",
+      }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал, ответ с сервера', response);
+          $(form)[0].reset();
+          modalThanks.toggleClass('modal--visible');
+          //ym(61250854,'reachGoal','form');
+        }
+      });
+    }
+  });
+
   //Видео в секции figures
   var player;
 

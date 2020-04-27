@@ -1,3 +1,21 @@
+@media screen and ( max-width: 1736px )
+    .contacts
+        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 130%
+@media screen and ( max-width: 1508px )
+    .contacts
+        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 150%
+@media screen and ( max-width: 1428px )
+    .contacts
+        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 190%
+@media screen and ( max-width: 1348px )
+    .contacts
+        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 270%
+@media screen and ( max-width: 1260px )
+    .contacts
+        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 350%
+@media screen and ( max-width: 1228px )
+    .contacts
+        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 450%
 @media screen and ( max-width: 1600px )
     .reviews__swiper-button
         &-prev
@@ -33,7 +51,7 @@
     .button-wrapper
         flex-basis: 6%
     .hero
-        background: #ffffff
+        background: $light
         &-content
             padding-left: 10%
         &__social-networks
@@ -41,11 +59,17 @@
                 height: 30rem
     .factors
         right: 0
+    .contacts
+        background: $primary
+        &__container
+            justify-content: center
+        &__text>a
+            color: $light
 @media screen and ( max-width: 1045px )
     .cases
         &__swiper
             &-container
-                background: #ffffff
+                background: $light
             &-slide-content
                 justify-content: center
 
