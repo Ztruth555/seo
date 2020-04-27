@@ -175,14 +175,25 @@ $(document).ready(function () {
     event.target.playVideo();
   }
 
-  // Слайдеры
-  // var casesSwiper = new Swiper ('.cases__swiper-container', {
-  //   loop: true,
-  //   // Стрелки навигации
-  //   navigation: {
-  //     prevEl: '.cases__swiper-button-prev',
-  //     nextEl: '.cases__swiper-button-next',
-  //   },
-  // });
+// //  Слайдеры
+//   //cases
+//   var casesSwiper = new Swiper ('.cases__swiper-container', {
+//     loop: true,
+//     // Стрелки навигации
+//     navigation: {
+//       prevEl: '.cases__swiper-button-prev',
+//       nextEl: '.cases__swiper-button-next',
+//     },
+//   });
+
+//   var reviewsSwiper = new Swiper ('.reviews__swiper-container', {
+//     loop: true,
+//     // Стрелки навигации
+//     navigation: {
+//       prevEl: '.reviews__swiper-button-prev',
+//       nextEl: '.reviews__swiper-button-next',
+//     },
+//   });
+
   
 })

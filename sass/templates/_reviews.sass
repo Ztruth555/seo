@@ -1,0 +1,68 @@
+.reviews
+    background: url(../img/reviews/bg-reviews.jpg) no-repeat center 25%
+    position: relative
+    &__container
+        // position: relative
+        padding: 0 5rem
+    &__section-title-title
+        margin-top: 0
+        margin-bottom: 2.5rem
+    &__swiper
+        &-container
+            max-width: 984px
+            margin-top: 2.5rem
+        &-slide
+            &-content
+                padding: 3rem 0
+            &-text
+                max-width: 984px
+                margin-bottom: 2.2rem
+                text-align: center
+                font-size: 1.57rem
+                line-height: 2.5rem
+                font-weight: 300
+                color: #0d0d0d
+            &-portrait
+                width: 310px
+                margin: 0 auto
+        &-button
+            &-prev, &-next
+                position: absolute
+                z-index: 10
+                cursor: pointer
+                top: 48%
+                background-size: 42px
+                width: 23px
+                height: 47px
+                &::after
+                    display: none
+            &-prev
+                left: 22.5%
+                background: url(../img/cases/arrow_prev_swiper_cases.png) no-repeat center
+            &-next
+                right: 22.5%
+                background: url(../img/cases/arrow_next_swiper_cases.png) no-repeat center
+    &__button
+        display: block
+        padding: 0.35rem 4.5rem
+        margin: 1.3rem auto 5.7rem
+.portrait
+    display: flex
+    align-items: center
+    &__img
+        margin-right: 1rem
+    &__text
+        margin-right: 1rem
+    &__name
+        display: block
+        font-size: 1.2857rem
+        line-height: 2rem
+        font-weight: 500
+        color: #0d0d0d
+        margin-bottom: -10px 
+    &__company
+        display: block
+        font-size: 1rem
+        line-height: 2.5rem
+        font-weight: 400
+        color: #848281 
