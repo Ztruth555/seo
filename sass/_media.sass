@@ -39,6 +39,8 @@
         &__social-networks
             &-line
                 height: 30rem
+    .factors
+        right: 0
 @media screen and ( max-width: 1045px )
     .cases
         &__swiper
@@ -72,10 +74,14 @@
             min-height: 25.2rem
             margin-top: 0
     .reviews__swiper-button
-        &-prev
-            display: none
-        &-next
-            display: none
+        // &-prev
+        //     display: none
+        // &-next
+        //     display: none
+    .factors
+        max-width: 400px
+        min-height: 240px
+        bottom: 0
     .wrapper
         // &__item
         //     background-color: #e3fbdd
@@ -100,4 +106,26 @@
         &__social-networks
             display: none 
     .cases
-        display: none
+        &__container
+            padding-left: 0
+        &__swiper
+            &-slide-content
+                padding-left: 1px
+                padding-right: 1px
+            &-button
+                &-prev, &-next
+                    display: none
+    .factors
+        position: relative
+        max-width: 100%
+        margin-top: 2rem
+    .date
+        left: 14px
+        top: 16px
+        width: 35px
+        height: 44px
+        padding: 10px
+        &__numbur
+            font-size: 15px
+        &__month
+            font-size: 8px

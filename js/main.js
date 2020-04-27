@@ -167,6 +167,7 @@ $(document).ready(function () {
       }
     });
     $('.figures__card').addClass('figures__card--video-active');
+    $('.hero').addClass('hero--video-active');
   });
 
   
@@ -175,25 +176,38 @@ $(document).ready(function () {
     event.target.playVideo();
   }
 
-// //  Слайдеры
-//   //cases
-//   var casesSwiper = new Swiper ('.cases__swiper-container', {
-//     loop: true,
-//     // Стрелки навигации
-//     navigation: {
-//       prevEl: '.cases__swiper-button-prev',
-//       nextEl: '.cases__swiper-button-next',
-//     },
-//   });
+  // //  Слайдеры
 
-//   var reviewsSwiper = new Swiper ('.reviews__swiper-container', {
-//     loop: true,
-//     // Стрелки навигации
-//     navigation: {
-//       prevEl: '.reviews__swiper-button-prev',
-//       nextEl: '.reviews__swiper-button-next',
-//     },
-//   });
+  // //cases
+  // var casesSwiper = new Swiper ('.cases__swiper-container', {
+  //   loop: true,
+  //   // Стрелки навигации
+  //   navigation: {
+  //     prevEl: '.cases__swiper-button-prev',
+  //     nextEl: '.cases__swiper-button-next',
+  //   },
+  // });
+
+  // //reviews
+  // var reviewsSwiper = new Swiper ('.reviews__swiper-container', {
+  //   loop: true,
+  //   // Стрелки навигации
+  //   navigation: {
+  //     prevEl: '.reviews__swiper-button-prev',
+  //     nextEl: '.reviews__swiper-button-next',
+  //   },
+  // });
+
+
+  // // news
+  // var newsSwiper = new Swiper ('.news__swiper-container', {
+  //   loop: true,
+  //   // Стрелки навигации
+  //   navigation: {
+  //     prevEl: '.news__swiper-button-prev',
+  //     nextEl: '.news__swiper-button-next',
+  //   },
+  // });
 
   
 })
