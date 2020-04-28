@@ -1,21 +1,3 @@
-@media screen and ( max-width: 1736px )
-    .contacts
-        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 130%
-@media screen and ( max-width: 1508px )
-    .contacts
-        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 150%
-@media screen and ( max-width: 1428px )
-    .contacts
-        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 190%
-@media screen and ( max-width: 1348px )
-    .contacts
-        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 270%
-@media screen and ( max-width: 1260px )
-    .contacts
-        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 350%
-@media screen and ( max-width: 1228px )
-    .contacts
-        background: $light url(../img/contacts/bg_contacts.jpg) no-repeat 450%
 @media screen and ( max-width: 1600px )
     .reviews__swiper-button
         &-prev
@@ -30,6 +12,18 @@
             background: $light
         &__input-group-box
             margin: 0 auto
+    .contacts
+        background: $primary
+        &__container
+            flex-direction: column
+            align-items: center
+        &__text>a
+            color: $light
+        &__button
+            display: block
+            max-width: 50%
+            padding: 0 1rem 
+            margin: 2rem  auto 2rem 
 @media screen and ( max-height: 1000px ) 
     // .hero
     //     background: url(../img/hero/bg_left_top_hero.png) no-repeat -1% 0%
@@ -81,7 +75,7 @@
         &__form
             margin-left: 0
 
-@media screen and ( max-width: 1037px )
+@media screen and ( max-width: 1088px )
     .services
         &__row
             justify-content: center
@@ -130,6 +124,14 @@
             line-height: 4.43rem
         &-content
             margin: 0 auto
+            padding-left: 0
+        &__button
+            position: relative
+            z-index: 10
+            display: block
+            width: 200px
+            margin-left: auto
+            margin-right: auto
     .figures
         &__video
             min-height: 25.2rem
@@ -180,6 +182,10 @@
         position: relative
         max-width: 100%
         margin-top: 2rem
+    .news__swiper-button
+        width: 125px
+        margin-left: auto
+        margin-right: auto
     .date
         left: 14px
         top: 16px
