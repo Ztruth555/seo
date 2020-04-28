@@ -538,13 +538,13 @@ img {
     cursor: pointer; }
 
 .hero {
-  height: 100vh;
+  height: 1150px;
   min-width: 800px;
   margin-top: 0rem;
   background: url(../img/hero/bg-hero.jpg) no-repeat center 0%;
-  margin-bottom: 10rem; }
+  margin-bottom: -5rem; }
   .hero--video-active {
-    margin-bottom: 25rem; }
+    margin-bottom: 10rem; }
   .hero__lines {
     position: absolute;
     bottom: -22%;
@@ -560,14 +560,15 @@ img {
     .hero__social-networks-line {
       display: block;
       width: 4px;
-      height: 60vh;
+      height: 44.2rem;
       margin-left: 8px;
       margin-top: 10rem;
+      margin-bottom: 2.71rem;
       background-color: #ff5a3c;
       border-radius: 2px; }
     .hero__social-networks-link {
       display: block;
-      margin-top: 35px; }
+      margin-top: 2.07rem; }
   .hero-content {
     margin: 0;
     padding-top: 29%; }
@@ -676,7 +677,7 @@ img {
 
 .benefits__section-title {
   margin-top: 6.3rem;
-  margin-bottom: 4.2857rem; }
+  margin-bottom: 8.2857rem; }
   .benefits__section-title-title {
     margin-bottom: 2.5rem; }
 
@@ -684,19 +685,35 @@ img {
   justify-content: center; }
 
 .benefits__card {
-  margin-bottom: 2.2857rem;
+  position: relative;
+  margin: auto;
+  margin-bottom: 1.5rem;
   height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  max-width: 24rem; }
+  .benefits__card--left {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    margin-right: auto; }
+  .benefits__card--right {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    max-width: 25rem; }
   .benefits__card-img {
+    position: absolute;
+    left: 45%;
+    top: -3.7rem;
     display: block;
     margin: 0 auto;
     margin-bottom: 0.8rem;
     height: 40px; }
     .benefits__card-img > img {
       display: block;
-      margin: auto; }
+      margin-top: auto; }
+    .benefits__card-img-last-row {
+      top: -2.7rem; }
   .benefits__card-title {
     display: block;
     text-align: center;
@@ -927,7 +944,7 @@ img {
     position: absolute;
     z-index: 10;
     cursor: pointer;
-    top: 48%;
+    top: 51%;
     background-size: 42px;
     width: 23px;
     height: 47px; }
@@ -969,6 +986,8 @@ img {
   position: relative;
   background-color: #eefdea;
   padding-bottom: 9rem; }
+  .news__container {
+    position: relative; }
   .news__section-title {
     margin-bottom: 4rem; }
     .news__section-title-title {
@@ -1024,8 +1043,8 @@ img {
 .factors {
   position: absolute;
   z-index: 1;
-  right: 26.5rem;
-  bottom: 6.5rem;
+  right: 0.5rem;
+  bottom: -2.5rem;
   max-width: 550px;
   min-height: 340px;
   padding: 2.5rem 2.8rem;
@@ -1077,6 +1096,12 @@ img {
     .contacts__address-box {
       margin-top: 3rem;
       display: flex; }
+    .contacts__address-link {
+      text-decoration: none;
+      font-size: 1.2857rem;
+      line-height: 2.2rem;
+      font-weight: 300;
+      color: #1a1a1a; }
   .contacts__schedule {
     margin-top: 0.5rem;
     font-size: 18px;
@@ -1288,7 +1313,7 @@ img {
       display: block;
       max-width: 50%;
       padding: 0 1rem;
-      margin: 2rem  auto 2rem; } }
+      margin: 2rem auto; } }
 
 @media screen and (max-width: 1200px) {
   .nav {
@@ -1300,19 +1325,26 @@ img {
   .menu {
     justify-content: start; }
   .logo {
-    flex-basis: 44%; }
+    flex-basis: 44%;
+    margin-left: 10%; }
   .menu__phone {
     flex-basis: 50%; }
   .button-wrapper {
     flex-basis: 6%; }
   .hero {
+    height: 500px;
     background: #ffffff; }
     .hero-content {
       padding-left: 10%; }
     .hero__social-networks-line {
       height: 30rem; }
   .factors {
-    right: 0; }
+    right: 0; } }
+
+@media screen and (max-width: 1117px) {
+  .benefits__card--left, .benefits__card--right {
+    margin: auto;
+    margin-bottom: 1.5rem; }
   .contacts {
     background: #ff5a3c; }
     .contacts__container {
@@ -1334,10 +1366,26 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 1088px) {
+  .nav {
+    margin-left: 1rem; }
   .services__row {
     justify-content: center; } }
 
 @media screen and (max-width: 992px) {
+  .nav {
+    display: none; }
+  .button-wrapper {
+    display: block; }
+  .menu__button {
+    display: none; }
+  .menu {
+    justify-content: start; }
+  .logo {
+    flex-basis: 44%; }
+  .menu__phone {
+    flex-basis: 50%; }
+  .button-wrapper {
+    flex-basis: 6%; }
   .hero {
     margin-bottom: 0; }
     .hero__social-networks > a:hover {

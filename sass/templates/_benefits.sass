@@ -1,25 +1,42 @@
 .benefits
     &__section-title
         margin-top: 6.3rem
-        margin-bottom: 4.2857rem
+        margin-bottom: 8.2857rem
         &-title
             margin-bottom: 2.5rem
     &__row
         justify-content: center
     &__card
-        margin-bottom: 2.2857rem
+        position: relative
+        margin: auto
+        margin-bottom: 1.5rem
         height: 200px
         display: flex
         flex-direction: column
-        align-items: center
+        // align-items: center
+        max-width: 24rem
+        &--left
+            margin: 0
+            margin-bottom: 1.5rem
+            margin-right: auto
+        &--right
+            margin: 0
+            margin-bottom: 1.5rem
+            margin-left: auto
+            max-width: 25rem
         &-img
+            position: absolute
+            left: 45%
+            top: -3.7rem  
             display: block
             margin: 0 auto
             margin-bottom: 0.8rem
             height: 40px
             &>img
                 display: block
-                margin: auto
+                margin-top: auto
+            &-last-row
+                top: -2.7rem
         &-title
             display: block
             text-align: center

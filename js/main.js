@@ -1,4 +1,11 @@
-$(document).ready(function () {
+$(document).ready(function () { 
+  // Инициализация библиотеки WOW
+  new WOW().init();
+
+  // Маска для номера телефона
+  $('[type=tel]').mask('+7 (000) 000-00-00');
+
+  // Бургер-меню
     // Бургер-меню
     var buttonWrapper = $('.button-wrapper'),
         wrapper = $('wrapper');
@@ -128,7 +135,7 @@ $(document).ready(function () {
         maxlength: "Длина имени 2-15 символов"
       },
       costEmail:{
-        required: "Телефон обязательно",
+        required: "E-mail обязательно",
         email: "Введите в формате: name@domain.com"
       },
       costAddress:{
@@ -183,7 +190,7 @@ $(document).ready(function () {
         maxlength: "Длина имени 2-15 символов"
       },
       contactsEmail:{
-        required: "Телефон обязательно",
+        required: "E-mail обязательно",
         email: "Введите в формате: name@domain.com"
       },
       contactsPhone:{

@@ -23,7 +23,7 @@
             display: block
             max-width: 50%
             padding: 0 1rem 
-            margin: 2rem  auto 2rem 
+            margin: 2rem auto
 @media screen and ( max-height: 1000px ) 
     // .hero
     //     background: url(../img/hero/bg_left_top_hero.png) no-repeat -1% 0%
@@ -40,11 +40,13 @@
         justify-content: start
     .logo
         flex-basis: 44%
+        margin-left: 10%
     .menu__phone
         flex-basis: 50%
     .button-wrapper
         flex-basis: 6%
     .hero
+        height: 500px
         background: $light
         &-content
             padding-left: 10%
@@ -53,6 +55,12 @@
                 height: 30rem
     .factors
         right: 0
+@media screen and ( max-width: 1117px ) 
+    .benefits
+        &__card
+            &--left, &--right
+                margin: auto
+                margin-bottom: 1.5rem
     .contacts
         background: $primary
         &__container
@@ -76,10 +84,27 @@
             margin-left: 0
 
 @media screen and ( max-width: 1088px )
+    .nav
+        margin-left: 1rem
     .services
         &__row
             justify-content: center
 @media screen and ( max-width: 992px )
+    .nav
+        display: none
+    .button-wrapper
+        display: block
+    .menu
+        &__button
+            display: none
+    .menu
+        justify-content: start
+    .logo
+        flex-basis: 44%
+    .menu__phone
+        flex-basis: 50%
+    .button-wrapper
+        flex-basis: 6%
     .hero
         margin-bottom: 0
         &__social-networks
