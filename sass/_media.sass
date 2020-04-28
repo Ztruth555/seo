@@ -88,11 +88,40 @@
 @media screen and ( max-width: 992px )
     .hero
         margin-bottom: 0
+        &__social-networks
+            &>a
+                &:hover
+                    box-shadow: none
+    .menu
+        &__phone
+            &:hover
+                color: #38393b
+    .figures
+        &__video
+            &-play
+                &:hover
+                    &::before
+                        opacity: 0.4
+                    &::after
+                        opacity: 0.67
+    .services
+        &__card
+            &:hover
+                box-shadow: none
+                border: 1.0px solid #c9c8c8
     .reviews__swiper-button
         &-prev
             left: 5%
         &-next
             right: 5%
+    .button
+        &:hover
+            color: $light
+            background-color: $primary
+        &--light
+            &:hover 
+                color: #ff5a3c
+                background-color: $light
 @media screen and ( max-width: 768px )
     .hero
         margin-bottom: -15rem
@@ -124,7 +153,7 @@
         justify-content: space-between
         padding-top: 1rem
     .menu__phone
-        display: none
+        // display: none
     .logo__span
         font-size: 20px
     .logo

@@ -630,9 +630,7 @@ img {
     position: relative;
     cursor: pointer;
     margin-top: 8rem; }
-    .figures__video-play:hover::before {
-      opacity: 0.8; }
-    .figures__video-play:hover::after {
+    .figures__video-play:hover::before, .figures__video-play:hover::after {
       opacity: 0.8; }
     .figures__video-play > img {
       position: relative;
@@ -1341,10 +1339,27 @@ img {
 @media screen and (max-width: 992px) {
   .hero {
     margin-bottom: 0; }
+    .hero__social-networks > a:hover {
+      box-shadow: none; }
+  .menu__phone:hover {
+    color: #38393b; }
+  .figures__video-play:hover::before {
+    opacity: 0.4; }
+  .figures__video-play:hover::after {
+    opacity: 0.67; }
+  .services__card:hover {
+    box-shadow: none;
+    border: 1.0px solid #c9c8c8; }
   .reviews__swiper-button-prev {
     left: 5%; }
   .reviews__swiper-button-next {
-    right: 5%; } }
+    right: 5%; }
+  .button:hover {
+    color: #ffffff;
+    background-color: #ff5a3c; }
+  .button--light:hover {
+    color: #ff5a3c;
+    background-color: #ffffff; } }
 
 @media screen and (max-width: 768px) {
   .hero {
@@ -1366,8 +1381,6 @@ img {
   .menu {
     justify-content: space-between;
     padding-top: 1rem; }
-  .menu__phone {
-    display: none; }
   .logo__span {
     font-size: 20px; }
   .logo {
