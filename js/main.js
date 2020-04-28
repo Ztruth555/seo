@@ -231,7 +231,7 @@ $(document).ready(function () {
     event.target.playVideo();
   }
 
-  // //  Слайдеры
+  //  Слайдеры
 
   // //cases
   // var casesSwiper = new Swiper ('.cases__swiper-container', {
