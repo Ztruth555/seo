@@ -31,6 +31,6 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-tinypng-compress": "^1.2.5",
     "lodash.template": "^4.5.0",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   }
 }
